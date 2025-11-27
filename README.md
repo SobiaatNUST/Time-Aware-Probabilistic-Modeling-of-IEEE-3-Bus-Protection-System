@@ -46,7 +46,6 @@ Pmax=? [ F "L1_Isol_Failed" ]
 Pmax=? [ F "L2_Isol_Failed" ]
 Pmax=? [ F "L3_Isol_Failed" ]
 
-
 // Probability of Risk
 Pmax=? [F("L1_Risk")]
 Pmax=? [F("L2_Risk")]
@@ -59,5 +58,13 @@ Pmax=? [F("L3_False_Trip")]
 
 // Probability that any line remains under fault past thermal limit
 Pmax=? [ F "FaultPastThermal" ]
+
+// How to Run
+# Example: compute max probability that L1 is eventually isolated
+prism ieee3bus_timed.prism -prop 'Pmax=? [ F "L1_Isolated" ]'
+
+# Or using an external properties file:
+prism ieee3bus_timed.prism props.props -prop 1
+
 
 
