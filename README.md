@@ -5,7 +5,8 @@ This repository contains a PRISM MDP model of an IEEE 3-bus distribution test sy
 The model is designed to support **time-aware quantitative verification** of protection performance, including:
 
 - Probability of successful line isolation  
-- Probability of isolation failure  
+- Probability of isolation failure
+- Probability of system under risk
 - Probability of false tripping  
 - Probability that the system remains under fault past the thermal limit  
 
